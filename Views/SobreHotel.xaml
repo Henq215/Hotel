@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Hotel.Views.SobreHotel"
+             Title="Sobre o Hotel"
+             BackgroundColor="#F8F9FA">
+
+    <ScrollView Padding="24">
+        <VerticalStackLayout Spacing="24">
+
+            <Button Text="← Voltar" 
+                    Clicked="OnVoltar_Clicked"
+                    BackgroundColor="Transparent"
+                    TextColor="#4A3AFF"
+                    FontAttributes="Bold"
+                    HorizontalOptions="Start"
+                    Padding="0" />
+
+            <VerticalStackLayout Spacing="6" Margin="0,10,0,10">
+                <Label Text="Sol e Mar Grand Resort &amp; Spa"
+                       FontSize="28"
+                       FontAttributes="Bold"
+                       TextColor="#2B2D42" />
+                <Label Text="Onde o luxo encontra o paraíso natural."
+                       FontSize="15"
+                       TextColor="#6C757D" />
+            </VerticalStackLayout>
+
+            <Border StrokeShape="RoundRectangle 12" StrokeThickness="0" BackgroundColor="#FFFFFF" Padding="16">
+                <Border.Shadow>
+                    <Shadow Brush="#000000" Offset="0,4" Radius="10" Opacity="0.04"/>
+                </Border.Shadow>
+
+                <VerticalStackLayout Spacing="8">
+                    <Label Text="📍 Localização" FontAttributes="Bold" TextColor="#2B2D42" FontSize="16"/>
+                    <Label Text="Av. do Mar, 1500 - Ubatuba, SP" TextColor="#4A4E69" FontSize="14"/>
+                    <Label Text="A apenas 2 horas de São Paulo, com acesso direto às prais." TextColor="#8D99AE" FontSize="12"/>
+                </VerticalStackLayout>
+            </Border>
+
+            <Label Text="Serviços Inclusos" FontAttributes="Bold" TextColor="#2B2D42" FontSize="18" Margin="0,10,0,0"/>
+
+            <Grid ColumnDefinitions="*, *" RowDefinitions="Auto, Auto" ColumnSpacing="12" RowSpacing="12">
+                <Border Grid.Row="0" Grid.Column="0" StrokeShape="RoundRectangle 12" StrokeThickness="0" BackgroundColor="#FFFFFF" Padding="12">
+                    <VerticalStackLayout Spacing="4" HorizontalOptions="Center">
+                        <Label Text="🍳" FontSize="24" HorizontalOptions="Center"/>
+                        <Label Text="Café Gourmet" FontAttributes="Bold" FontSize="14" TextColor="#2B2D42" HorizontalOptions="Center"/>
+                        <Label Text="Buffet completo regional" FontSize="11" TextColor="#8D99AE" HorizontalTextAlignment="Center"/>
+                    </VerticalStackLayout>
+                </Border>
+
+                <Border Grid.Row="0" Grid.Column="1" StrokeShape="RoundRectangle 12" StrokeThickness="0" BackgroundColor="#FFFFFF" Padding="12">
+                    <VerticalStackLayout Spacing="4" HorizontalOptions="Center">
+                        <Label Text="💆" FontSize="24" HorizontalOptions="Center"/>
+                        <Label Text="Spa &amp; Wellness" FontAttributes="Bold" FontSize="14" TextColor="#2B2D42" HorizontalOptions="Center"/>
+                        <Label Text="Massagens e terapias" FontSize="11" TextColor="#8D99AE" HorizontalTextAlignment="Center"/>
+                    </VerticalStackLayout>
+                </Border>
+
+                <Border Grid.Row="1" Grid.Column="0" StrokeShape="RoundRectangle 12" StrokeThickness="0" BackgroundColor="#FFFFFF" Padding="12">
+                    <VerticalStackLayout Spacing="4" HorizontalOptions="Center">
+                        <Label Text="🏊" FontSize="24" HorizontalOptions="Center"/>
+                        <Label Text="Borda Infinita" FontAttributes="Bold" FontSize="14" TextColor="#2B2D42" HorizontalOptions="Center"/>
+                        <Label Text="Piscina vista oceano" FontSize="11" TextColor="#8D99AE" HorizontalTextAlignment="Center"/>
+                    </VerticalStackLayout>
+                </Border>
+
+                <Border Grid.Row="1" Grid.Column="1" StrokeShape="RoundRectangle 12" StrokeThickness="0" BackgroundColor="#FFFFFF" Padding="12">
+                    <VerticalStackLayout Spacing="4" HorizontalOptions="Center">
+                        <Label Text="🛎️" FontSize="24" HorizontalOptions="Center"/>
+                        <Label Text="Concierge 24h" FontAttributes="Bold" FontSize="14" TextColor="#2B2D42" HorizontalOptions="Center"/>
+                        <Label Text="Suporte total ao hóspede" FontSize="11" TextColor="#8D99AE" HorizontalTextAlignment="Center"/>
+                    </VerticalStackLayout>
+                </Border>
+            </Grid>
+
+            <Border StrokeShape="RoundRectangle 12" StrokeThickness="0" BackgroundColor="#FFFFFF" Padding="16" Margin="0,10,0,20">
+                <Border.Shadow>
+                    <Shadow Brush="#000000" Offset="0,4" Radius="10" Opacity="0.04"/>
+                </Border.Shadow>
+
+                <VerticalStackLayout Spacing="10">
+                    <Label Text="📞 Canais de Atendimento" FontAttributes="Bold" TextColor="#2B2D42" FontSize="16"/>
+
+                    <HorizontalStackLayout Spacing="8">
+                        <Label Text="Telefone:" FontAttributes="Bold" TextColor="#4A4E69" FontSize="14"/>
+                        <Label Text="+55 (11) 99999-9999" TextColor="#4A3AFF" FontSize="14"/>
+                    </HorizontalStackLayout>
+
+                    <HorizontalStackLayout Spacing="8">
+                        <Label Text="E-mail:" FontAttributes="Bold" TextColor="#4A4E69" FontSize="14"/>
+                        <Label Text="reservas@solemar.com" TextColor="#4A3AFF" FontSize="14"/>
+                    </HorizontalStackLayout>
+                </VerticalStackLayout>
+            </Border>
+
+        </VerticalStackLayout>
+    </ScrollView>
+</ContentPage>
